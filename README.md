@@ -278,6 +278,5 @@ Este proyecto es mantenido por el equipo de TUSE. Para sugerencias o mejoras:
 
 5. Componente SEOHead Reutilizable
 
-Creé un componente centralizado que maneja todos los meta tags y structured data.
 
-Nota: Los archivos sitemap.xml y robots.txt no pueden crearse en Base44 ya que solo permite archivos en carpetas específicas. Para implementarlos, deberás configurarlos a nivel de servidor/hosting cuando publiques el sitio.
+bun run tailwindcss -i ./src/index.css -o ./src/output.css --watch

@@ -8,13 +8,20 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Theme } from "@radix-ui/themes";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 const elem = document.getElementById("root")!;
 const app = (
   <StrictMode>
     <Theme>
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </BrowserRouter>
     </Theme>
   </StrictMode>
 );

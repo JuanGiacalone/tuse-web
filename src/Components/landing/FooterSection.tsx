@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/lib/utils';
 
 
 const WhatsAppIcon = () => (
@@ -60,6 +62,7 @@ export default function FooterSection() {
                     </a>
                 </motion.div>
 
+
                 {/* Divider */}
                 <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
 
@@ -69,9 +72,17 @@ export default function FooterSection() {
                         <Shield className="w-4 h-4" />
                         <span>Seguridad Inteligente para Trabajadores</span>
                     </div>
-                    <p className="text-white/30 text-sm">
-                        © {new Date().getFullYear()} TUSE. Todos los derechos reservados.
-                    </p>
+                    <Link
+                        to={createPageUrl('PrivacyPolicy')}
+                        className="text-white/30 text-sm hover:text-[#C9A962] transition-colors"
+                    >
+                        Política de Privacidad
+                    </Link>
+                    <div className="flex flex-col md:flex-row items-center gap-6">
+                        <p className="text-white/30 text-sm">
+                            © {new Date().getFullYear()} TUSE. Todos los derechos reservados.
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

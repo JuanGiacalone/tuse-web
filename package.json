@@ -1,6 +1,6 @@
 {
   "name": "tuse-web",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "lucide-react": "^0.562.0",
     "react": "^19",
     "react-dom": "^19",
+    "react-router-dom": "^7.12.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18"
   },

@@ -13,6 +13,7 @@ import PricingSection from '@/Components/landing/PricingSection';
 import FooterSection from '@/Components/landing/FooterSection';
 import WhatsAppButton from '@/Components/landing/WhatsAppButton';
 import SEOHead from '@/Components/SEOHead';
+import logo from '@/logo.svg';
 
 
 export default function Home() {
@@ -39,8 +40,7 @@ export default function Home() {
             >
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <img
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/697152bc5c1c0ebf7ca2255d/4dc616b1f_Gemini_Generated_Image_vlgaluvlgaluvlga.png"
-                        alt="TUSE"
+                        src={logo}
                         className="h-10 md:h-12"
                     />
                     <a
@@ -60,7 +60,7 @@ export default function Home() {
                 style={{ opacity }}
                 className="fixed bottom-8 left-1/2 -translate-x-1/2 z-40 flex flex-col items-center gap-2"
             >
-                <span className="text-xs text-white/40 uppercase tracking-widest">Scroll</span>
+                <span className="text-xs text-white/40 uppercase tracking-widest">Seguí bajando</span>
                 <motion.div
                     animate={{ y: [0, 8, 0] }}
                     transition={{ duration: 1.5, repeat: Infinity }}
