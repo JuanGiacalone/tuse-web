@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Allow major search engines full access to main content
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Sitemap location (helps bots discover it faster)
+Sitemap: https://www.tuse.com.ar/sitemap.xml
+
+# Optional: Crawl delay to avoid server overload (in seconds; adjust if needed)
+Crawl-delay: 1
